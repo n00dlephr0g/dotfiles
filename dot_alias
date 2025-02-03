@@ -1,0 +1,38 @@
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# allllllll the goodies
+alias bp='nvim ~/.zshrc'
+alias sa='source ~/.zshrc'
+alias nf='neofetch'
+alias ed='cd ..'
+alias oct='octave-cli'
+alias repos='cd /home/n00dlephr0g/repos'
+alias chrome='google-chrome-stable --use-gl=egl --enable-features=UseOzonePlatform --ozone-platform=wayland'
+alias m-e-d='microsoft-edge-dev --use-gl=egl --enable-features=UseOzonePlatform --ozone-platform=wayland'
+alias dlv='yt-dlp --config-locations ~/.config/yt-dlp/video'
+alias dlvq='yt-dlp --config-locations ~/.config/yt-dlp/videoquiet'
+alias dlvl='yt-dlp --config-locations ~/.config/yt-dlp/videolow'
+alias dlp='yt-dlp --config-locations ~/.config/yt-dlp/playlist'
+alias dlx='yt-dlp --config-locations ~/.config/yt-dlp/videox'
+alias cpv='rsync -ah --info=progress2'
+alias python='python3'
+alias activatevenv='source .venv/bin/activate'
+alias q='echo $?'
+alias '?'='echo $?'
+alias unittestall='coverage run --branch --source=src -m unittest -v'
+alias unittest='coverage run -m unittest'
+alias sync='git add --all && git commit -m "$(date)" && git push || echo "sync failed"'
