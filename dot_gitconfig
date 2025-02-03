@@ -1,0 +1,16 @@
+[init]
+	defaultBranch = main
+[credential]
+	helper = libsecret
+[core]
+	editor = nvim
+[push]
+	autoSetupRemote = true
+[user]
+	name = n00dlephr0g
+	email = monkeyjosephlee@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
