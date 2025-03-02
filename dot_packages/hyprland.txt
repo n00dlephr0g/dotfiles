@@ -5,3 +5,13 @@ hyprpolkitagent
 hyprland-qt-support
 hyprland-plugin-hyprbars
 hyprutils
+aylurs-gtk-shell
+waybar
+swww
+wofi
+clipse
+grim
+swaync
+pipewire-pulse
+dolphin
+
