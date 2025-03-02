@@ -1,0 +1,15 @@
+#n00dlephr0g@github.com
+Host github.com
+    HostName github.com
+    IdentityFile ~/.ssh/github
+    User git
+    #IdentitiesOnly yes
+
+#jlee0365@git.infotech.monash.edu
+Host git.infotech.monash.edu
+    HostName git.infotech.monash.edu
+    IdentityFile ~/.ssh/rsa_jlee0365
+    User git
+    #IdentitiesOnly yes
+
+AddKeysToAgent yes
