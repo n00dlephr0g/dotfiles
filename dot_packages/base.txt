@@ -25,7 +25,6 @@ ntfs-3g
 dosfstools
 python
 pip
-balena-etcher
 flatpak
 flatseal
 android-sdk-platform-tools
