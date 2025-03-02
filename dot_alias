@@ -39,4 +39,5 @@ alias sync='git add --all && git commit -m "$(date)" && git push || echo "sync f
 alias cm='chezmoi'
 alias edit='chezmoi edit --apply'
 alias cmpush='sh ~/.scripts/chezmoipush.sh'
+alias cmpull='chezmoi update --apply'
 alias show='kitten icat'
