@@ -1,0 +1,7 @@
+hyprland
+hypridle
+hyprlock
+hyprpolkitagent
+hyprland-qt-support
+hyprland-plugin-hyprbars
+hyprutils
