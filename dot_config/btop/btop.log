@@ -3115,3 +3115,40 @@ btop++ needs an interactive shell to run.
 2025/03/10 (03:10:15) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
 2025/03/10 (03:10:15) | WARNING: ROCm SMI: Failed to get VRAM utilization
 2025/03/10 (03:10:15) | WARNING: ROCm SMI: Failed to get PCIe throughput
+
+2025/03/11 (17:41:19) | ===> btop++ v.1.4.0
+2025/03/11 (17:41:19) | INFO: Logger set to INFO
+2025/03/11 (17:41:19) | INFO: Running on /dev/pts/0
+2025/03/11 (17:41:19) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2025/03/11 (17:41:19) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2025/03/11 (17:41:19) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2025/03/11 (17:41:19) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2025/03/11 (17:41:19) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2025/03/11 (17:41:22) | INFO: Quitting! Runtime: 00:00:03
+
+2025/03/13 (11:29:25) | ===> btop++ v.1.4.0
+2025/03/13 (11:29:25) | INFO: Logger set to INFO
+2025/03/13 (11:29:25) | INFO: Running on /dev/pts/1
+2025/03/13 (11:29:25) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2025/03/13 (11:29:25) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2025/03/13 (11:29:25) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2025/03/13 (11:29:25) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2025/03/13 (11:29:25) | WARNING: ROCm SMI: Failed to get PCIe throughput
+
+2025/03/13 (12:34:23) | ===> btop++ v.1.4.0
+2025/03/13 (12:34:23) | INFO: Logger set to INFO
+2025/03/13 (12:34:23) | INFO: Running on /dev/pts/1
+2025/03/13 (12:34:23) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2025/03/13 (12:34:23) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2025/03/13 (12:34:23) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2025/03/13 (12:34:23) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2025/03/13 (12:34:23) | WARNING: ROCm SMI: Failed to get PCIe throughput
+
+2025/03/13 (16:38:11) | ===> btop++ v.1.4.0
+2025/03/13 (16:38:11) | INFO: Logger set to INFO
+2025/03/13 (16:38:11) | INFO: Running on /dev/pts/0
+2025/03/13 (16:38:11) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2025/03/13 (16:38:11) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2025/03/13 (16:38:11) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2025/03/13 (16:38:11) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2025/03/13 (16:38:11) | WARNING: ROCm SMI: Failed to get PCIe throughput
