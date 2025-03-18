@@ -1,0 +1,8 @@
+# ensure init loads first
+source "$SRC_DIR/init"
+
+# source the rest of the files
+for file in $SRC_DIR/*.zsh(.); 
+do 
+	source $file;
+done
