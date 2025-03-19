@@ -28,6 +28,4 @@ pip
 flatpak
 flatseal
 android-sdk-platform-tools
-
-
-
+zoxide
