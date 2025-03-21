@@ -1,0 +1,9 @@
+kitty
+zen-browser-bin
+gparted
+balena-etcher
+ttf-iosevka-nerd
+filelight
+wev
+visual-studio-code-bin
+vesktop
