@@ -7,3 +7,11 @@ fi
 autoload -Uz compinit
 compinit
 
+# source stuff with recursion protection
+for file in $ZDOTDIR/*(.); 
+do
+  if [[ "$(basename "$file")" != "init" ]]; then
+    source $file;
+  fi
+done
+unset file
