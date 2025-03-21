@@ -1,7 +1,8 @@
 # advanced ls commands
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias l='ls --group-directories-first'
+alias ll='ls -AFho --group-directories-first'
+alias la='ls -A --group-directories-first'
+
 
 # program shortcuts
 alias nf='neofetch'
@@ -17,7 +18,7 @@ alias q='echo $?'
 alias activatevenv='source .venv/bin/activate'
 alias cpv='rsync -ah --info=progress2'
 alias push='git add --all && git commit -m "$(date)" && git push || echo "sync failed"'
-alias pdf='sh ~/.scripts/pdf.sh'
+alias pdf='sh $SCRIPTDIR/pdf.sh'
 alias show='kitten icat'
 alias gitlist='git ls-tree -r $(git branch | grep \* | cut -d ' ' -f2) --name-only'
 alias calc='octave --eval'

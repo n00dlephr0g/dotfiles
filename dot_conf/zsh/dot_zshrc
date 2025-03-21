@@ -1,3 +1,2 @@
 source "$HOME/.conf/paths"
 . "$HOME/.conf/zsh/init"
-
