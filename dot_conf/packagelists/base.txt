@@ -23,6 +23,7 @@ usb-utils
 ntfs3-dkms
 ntfs-3g
 dosfstools
+imagemagick
 brightnessctl
 pw-volume
 pulsemixer
