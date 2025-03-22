@@ -23,6 +23,9 @@ usb-utils
 ntfs3-dkms
 ntfs-3g
 dosfstools
+brightnessctl
+pw-volume
+pulsemixer
 python
 pip
 flatpak

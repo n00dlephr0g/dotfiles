@@ -14,5 +14,3 @@ grim
 swaync
 pipewire-pulse
 dolphin
-brightnessctl
-pulsemixer

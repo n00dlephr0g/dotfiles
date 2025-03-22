@@ -32,6 +32,7 @@ alias host='cat /etc/hostname'
 alias cmpush='sh $SCRIPTDIR/chezmoipush.sh'
 alias edit='chezmoi edit --apply'
 alias cmpull='chezmoi update --apply'
+alias cmlist='chezmoi list --tree'
 
 # yt-dlp shortcuts
 alias dlv='yt-dlp --config-locations ~/.config/yt-dlp/video'
