@@ -6,6 +6,8 @@ cd ~/.local/share/chezmoi
 
 chezmoi re-add
 
+chezmoi add $CONFDIR -r
+
 git add .
 
 git commit -m "$(date "+%D %T")"
