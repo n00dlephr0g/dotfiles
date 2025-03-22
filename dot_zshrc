@@ -1,3 +1,0 @@
-SRC_DIR="$HOME/.conf/zsh"
-
-source "$SRC_DIR/src"
