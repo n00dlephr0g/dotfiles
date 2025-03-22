@@ -13,6 +13,8 @@ export LESS_TERMCAP_ZV=$(tput rsubm)
 export LESS_TERMCAP_ZO=$(tput ssupm)
 export LESS_TERMCAP_ZW=$(tput rsupm)
 export GROFF_NO_SGR=1         # For Konsole and Gnome-terminal
+
+# important stuff
 export LESS="--RAW-CONTROL-CHARS"
 export EDITOR='nvim'
 export VI_MODE_SET_CURSOR=true
@@ -20,6 +22,8 @@ unset ZSH_AUTOSUGGEST_USE_ASYNC
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 export PATH=$PATH:/home/n00dlephr0g/.spicetify
 export TERM=xterm-256color
+
+# paths
 export PATH="$PATH:/home/n00dlephr0g/.local/bin"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
