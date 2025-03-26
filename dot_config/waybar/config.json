@@ -17,7 +17,7 @@
         "idle_inhibitor", 
         "network", 
         "backlight", 
-        "custom/pipewire", 
+        "custom/pipewire",
         "battery", 
         "clock", 
         "keyboard-state",
@@ -94,7 +94,8 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon} ",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "reverse-scrolling": true
     },
     "battery": {
         "states": {
@@ -124,7 +125,7 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source} ",
+        "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
@@ -152,11 +153,12 @@
             "default": ["", "", ""]
         },
         "exec": "pw-volume status",
-        "exec-on-event": false,
-        "on-click": "pw-volume mute toggle",
-        "on-click-right": "pavucontrol",
-        "on-scroll-up": "pw-volume change -1%",
-        "on-scroll-down": "pw-volume change +1%",
+        "exec-on-event": true,
+        "on-click": "pulsemixer --toggle-mute",
+        "on-double-click": "kitty -e pulsemixer",
+        "smooth-scrolling-threshold":1,
+        "on-scroll-up": "pulsemixer --change-volume -1",
+        "on-scroll-down": "pulsemixer --change-volume +1",
     },
 
     "custom/media": {
