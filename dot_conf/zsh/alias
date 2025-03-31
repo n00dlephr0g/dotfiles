@@ -23,6 +23,8 @@ alias show='kitten icat'
 alias gitlist='git ls-tree -r $(git branch | grep \* | cut -d ' ' -f2) --name-only'
 alias calc='octave --eval'
 alias host='cat /etc/hostname'
+alias hotspot='nmcli device wifi connect Me'
+alias eduroam='nmcli device wifi connect eduroam'
 
 # chezmoi commands
 alias edit='chezmoi edit --apply'
@@ -35,10 +37,5 @@ alias cmpull='chezmoi update --apply'
 alias cmlist='chezmoi list --tree'
 
 # yt-dlp shortcuts
-alias dlv='yt-dlp --config-locations ~/.config/yt-dlp/video'
-alias dlvq='yt-dlp --config-locations ~/.config/yt-dlp/videoquiet'
-alias dlvl='yt-dlp --config-locations ~/.config/yt-dlp/videolow'
-alias dlp='yt-dlp --config-locations ~/.config/yt-dlp/playlist'
-alias dlx='yt-dlp --config-locations ~/.config/yt-dlp/videox'
 
 
