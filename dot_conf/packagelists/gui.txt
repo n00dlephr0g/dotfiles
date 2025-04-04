@@ -7,3 +7,5 @@ filelight
 wev
 visual-studio-code-bin
 vesktop
+swaync
+
