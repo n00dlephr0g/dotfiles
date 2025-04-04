@@ -2,4 +2,4 @@
 
 bash $HOME/.conf/scripts/setup-yay.sh
 
-yay -S --needed - < $HOME/.packages/base.txt
+yay -S --needed - < $HOME//base.txt
