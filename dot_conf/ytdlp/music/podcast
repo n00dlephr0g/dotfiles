@@ -1,0 +1,11 @@
+-q
+--progress
+--break-on-existing
+-N 4
+-R 20
+-x
+--audio-format mp3
+--embed-thumbnail
+--embed-metadata
+-o ~/Music/Podcast/%(title)s.%(ext)s
+

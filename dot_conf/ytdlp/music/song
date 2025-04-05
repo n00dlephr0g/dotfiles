@@ -1,0 +1,12 @@
+-q
+--progress
+--break-on-existing
+-N 4
+-R 20
+-x
+--audio-format mp3
+--audio-quality 7
+--embed-thumbnail
+--embed-metadata
+-o ~/Music/Singles/%(title)s.%(ext)s
+
