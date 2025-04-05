@@ -1,5 +1,6 @@
 #!/bin/sh
 
+chmod +x $SCRIPTDIR/*.sh
 
 cd ~/.local/share/chezmoi
 
