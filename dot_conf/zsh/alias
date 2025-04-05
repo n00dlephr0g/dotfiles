@@ -40,6 +40,7 @@ alias cmlist='chezmoi list --tree'
 # yt-dlp shortcuts
 alias dlsong='yt-dlp --config-locations ~/.conf/ytdlp/music/song'
 alias dlalbum='yt-dlp --config-locations ~/.conf/ytdlp/music/album'
+alias dlcd='yt-dlp --config-locations ~/.conf/ytdlp/music/cd'
 
 # vm commands
 alias virsh='virsh -c qemu:///system'
