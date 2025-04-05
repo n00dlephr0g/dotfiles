@@ -5,8 +5,8 @@ cd ~/.local/share/chezmoi
 
 chezmoi re-add
 
-chezmoi add $SCRIPTDIR/*
-chezmoi add $PACKAGEDIR/*
+chezmoi add -r $SCRIPTDIR
+chezmoi add -r $PACKAGEDIR
 
 git add .
 
