@@ -1,0 +1,11 @@
+sway
+swaybg
+swaylock
+swayidle
+wayland
+wlroots
+xorg-server-xwayland
+wayland-protocols
+grim
+slurp
+wofi

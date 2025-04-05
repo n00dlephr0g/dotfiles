@@ -1,11 +1,10 @@
--q
 --progress
 --break-on-existing
 -N 4
 -R 20
 -x
+-S acodec:m4a
 --audio-format mp3
---audio-quality 0
 --embed-thumbnail
 --embed-metadata
 -o ~/Music/CDs/%(album)s/%(playlist_index)s-%(title)s.%(ext)s
