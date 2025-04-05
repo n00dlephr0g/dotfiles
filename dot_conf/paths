@@ -1,4 +1,4 @@
 export CONFDIR="$HOME/.conf"
 export HYPRDIR="$CONFDIR/hyprland"
 export SCRIPTDIR="$CONFDIR/scripts"
-export PACKAGEDIR="$CONFDIR/packagelists"
+export PACKAGEDIR="$CONFDIR/packages"
