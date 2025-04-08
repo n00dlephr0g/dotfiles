@@ -1,3 +1,5 @@
+AddKeysToAgent yes
+
 #n00dlephr0g@github.com
 Host github.com
     HostName github.com
@@ -12,4 +14,8 @@ Host git.infotech.monash.edu
     User git
     #IdentitiesOnly yes
 
-AddKeysToAgent yes
+Host scallop
+    Hostname scallop
+    IdentityFile ~/.ssh/scallop
+    User n00dlephr0g
+
