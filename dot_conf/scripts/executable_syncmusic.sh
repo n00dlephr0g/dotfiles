@@ -1,5 +1,9 @@
 #!/bin/bash
+
 SSID=$(iwgetid -r)
-ipaddr= 
+IPADDR="scallop"
 if [ "$SSID" = "TimTen" ] then
-	rsync -avh --delete --info=progress2 ~/Music/ n00dlephr0g@:/data/navidrome
+	IPADDR="192.168.0.74"
+fi
+rsync -avh --info=progress2 ~/Music/ "n00dlephr0g@$IPADDR:/data/music"
+
