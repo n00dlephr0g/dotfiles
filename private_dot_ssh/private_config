@@ -19,3 +19,8 @@ Host scallop
     IdentityFile ~/.ssh/scallop
     User n00dlephr0g
 
+Host 192.168.0.74
+    Hostname 192.168.0.74
+    IdentityFile ~/.ssh/scallop
+    User n00dlephr0g
+
