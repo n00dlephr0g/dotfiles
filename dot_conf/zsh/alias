@@ -23,8 +23,8 @@ alias show='kitten icat'
 alias gitlist='git ls-tree -r $(git branch | grep \* | cut -d ' ' -f2) --name-only'
 alias calc='octave --eval'
 alias host='cat /etc/hostname'
-alias hotspot='nmcli device wifi connect Me'
-alias eduroam='nmcli device wifi connect eduroam'
+alias hotspot='nmcli device wifi rescan; nmcli device wifi connect Me'
+alias eduroam='nmcli device wifi rescan; nmcli device wifi connect eduroam'
 alias setup="bash $HOME/.conf/scripts/setup.sh"
 
 # chezmoi commands
@@ -41,6 +41,7 @@ alias cmlist='chezmoi list --tree'
 alias dlsong='yt-dlp --config-locations ~/.conf/ytdlp/music/song'
 alias dlalbum='yt-dlp --config-locations ~/.conf/ytdlp/music/album'
 alias dlcd='yt-dlp --config-locations ~/.conf/ytdlp/music/cd'
+
 
 # vm commands
 alias virsh='virsh -c qemu:///system'
