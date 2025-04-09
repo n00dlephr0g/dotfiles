@@ -12,6 +12,7 @@ alias f='fzf'
 alias python='python3'
 alias cm='chezmoi'
 
+
 # functional shortcuts
 alias reload='source ~/.zshrc'
 alias '?'='echo $?'
@@ -19,15 +20,19 @@ alias q='echo $?'
 alias volume='.$SCRIPTDIR/volume.sh'
 alias activatevenv='source .venv/bin/activate'
 alias cpv='rsync -avh --info=progress2'
-alias push='git add --all && git commit -m "$(date)" && git push || echo "sync failed"'
-alias pdf='sh $SCRIPTDIR/pdf.sh'
 alias show='kitten icat'
 alias gitlist='git ls-tree -r $(git branch | grep \* | cut -d ' ' -f2) --name-only'
 alias calc='octave --eval'
 alias host='cat /etc/hostname'
 alias hotspot='nmcli device wifi rescan; nmcli device wifi connect Me'
 alias eduroam='nmcli device wifi rescan; nmcli device wifi connect eduroam'
-alias setup="bash $HOME/.conf/scripts/setup.sh"
+alias setup="$SCRIPTDIR/setup.sh"
+
+alias pdf='$SCRIPTDIR/pdf.sh'
+
+# git commands
+alias commit="$SCRIPTDIR/commit.sh"
+alias push="$SCRIPTDIR/push.sh"
 
 # chezmoi commands
 alias edit='chezmoi edit --apply'
