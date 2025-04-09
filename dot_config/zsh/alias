@@ -27,13 +27,16 @@ alias host='cat /etc/hostname'
 alias hotspot='nmcli device wifi rescan; nmcli device wifi connect Me'
 alias eduroam='nmcli device wifi rescan; nmcli device wifi connect eduroam'
 alias setup="$SCRIPTDIR/setup.sh"
-
 alias pdf='$SCRIPTDIR/pdf.sh'
 
 # git commands
 alias commit="$SCRIPTDIR/commit.sh"
 alias push="$SCRIPTDIR/push.sh"
 alias pull="$SCRIPTDIR/pull.sh"
+
+# server commands
+alias sendfile='. $SCRIPTDIR/sendfile.sh'
+alias syncmusic='$SCRIPTDIR/syncmusic.sh'
 
 # chezmoi commands
 alias edit='chezmoi edit --apply'
