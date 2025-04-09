@@ -1,0 +1,47 @@
+# advanced ls commands
+alias l='ls --group-directories-first'
+alias ll='ls -AFho --group-directories-first'
+alias la='ls -A --group-directories-first'
+
+
+# program shortcuts
+alias nf='neofetch'
+alias ed='cd ..'
+alias oct='octave-cli'
+alias f='fzf'
+alias python='python3'
+alias cm='chezmoi'
+
+# functional shortcuts
+alias '?'='echo $?'
+alias q='echo $?'
+alias activatevenv='source .venv/bin/activate'
+alias cpv='rsync -avh --info=progress2'
+alias push='git add --all && git commit -m "$(date)" && git push || echo "sync failed"'
+alias pdf='sh $SCRIPTDIR/pdf.sh'
+alias show='kitten icat'
+alias gitlist='git ls-tree -r $(git branch | grep \* | cut -d ' ' -f2) --name-only'
+alias calc='octave --eval'
+alias host='cat /etc/hostname'
+alias hotspot='nmcli device wifi rescan; nmcli device wifi connect Me'
+alias eduroam='nmcli device wifi rescan; nmcli device wifi connect eduroam'
+alias setup="bash $HOME/.conf/scripts/setup.sh"
+
+# chezmoi commands
+alias edit='chezmoi edit --apply'
+alias cmpush='sh $SCRIPTDIR/chezmoipush.sh'
+alias cmpull='chezmoi update --apply'
+alias host='cat /etc/hostname'
+alias cmpush='sh $SCRIPTDIR/chezmoipush.sh'
+alias edit='chezmoi edit --apply'
+alias cmpull='chezmoi update --apply'
+alias cmlist='chezmoi list --tree'
+
+# yt-dlp shortcuts
+alias dlsong='yt-dlp --config-locations ~/.conf/ytdlp/music/song'
+alias dlalbum='yt-dlp --config-locations ~/.conf/ytdlp/music/album'
+alias dlcd='yt-dlp --config-locations ~/.conf/ytdlp/music/cd'
+
+
+# vm commands
+alias virsh='virsh -c qemu:///system'
