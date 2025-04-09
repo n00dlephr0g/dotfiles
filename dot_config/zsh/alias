@@ -33,6 +33,7 @@ alias pdf='$SCRIPTDIR/pdf.sh'
 # git commands
 alias commit="$SCRIPTDIR/commit.sh"
 alias push="$SCRIPTDIR/push.sh"
+alias pull="$SCRIPTDIR/pull.sh"
 
 # chezmoi commands
 alias edit='chezmoi edit --apply'

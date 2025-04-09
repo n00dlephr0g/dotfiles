@@ -1,12 +1,13 @@
 #!/bin/bash
 
 message="$(date)"
-if [ $# -mt 1]; then
-	echo "commit message:\n$1"
-	message=$1
+
+if [ $# -gt 1 ]; then
+	message="$@"
 fi
 
 git add --all
-git commit -m "commit message"
 
-git push || echo "sync failed"
+git commit -m "$message"
+
+git push || echo "sync failedk"
