@@ -13,8 +13,10 @@ alias python='python3'
 alias cm='chezmoi'
 
 # functional shortcuts
+alias reload='source ~/.zshrc'
 alias '?'='echo $?'
 alias q='echo $?'
+alias volume='.$SCRIPTDIR/volume.sh'
 alias activatevenv='source .venv/bin/activate'
 alias cpv='rsync -avh --info=progress2'
 alias push='git add --all && git commit -m "$(date)" && git push || echo "sync failed"'
