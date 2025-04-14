@@ -46,7 +46,8 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 bindswitch lid:on output eDP-1 disable
 bindswitch lid:off output eDP-1 enable
 bindsym $mod+Left exec $CONFDIR/sway/swayrow.sh col - 1
-bindsym $mod+Right exec $CONFDIR/sway/swayrow.sh col + 1
+bindsym $mod+Right exec $SCRIPTDIR/swayrow.sh col + 1 && echo MODRIGHT > ~/swaylog
+
 bindsym $mod+Up exec $CONFDIR/sway/swayrow.sh row - 1
 bindsym $mod+Down exec $CONFDIR/sway/swayrow.sh row + 1
 bindgesture swipe:left exec $CONFDIR/sway/swayrow.sh col + 1

@@ -17,7 +17,6 @@ alias cm='chezmoi'
 alias reload='source ~/.zshrc'
 alias '?'='echo $?'
 alias q='echo $?'
-alias volume='.$SCRIPTDIR/volume.sh'
 alias activatevenv='source .venv/bin/activate'
 alias cpv='rsync -avh --info=progress2'
 alias show='kitten icat'
@@ -26,24 +25,11 @@ alias calc='octave --eval'
 alias host='cat /etc/hostname'
 alias hotspot='nmcli device wifi rescan; nmcli device wifi connect Me'
 alias eduroam='nmcli device wifi rescan; nmcli device wifi connect eduroam'
-alias setup="$SCRIPTDIR/setup.sh"
-alias pdf='$SCRIPTDIR/pdf.sh'
-
-# git commands
-alias commit="$SCRIPTDIR/commit.sh"
-alias push="$SCRIPTDIR/push.sh"
-alias pull="$SCRIPTDIR/pull.sh"
-
-# server commands
-alias sendfile='. $SCRIPTDIR/sendfile.sh'
-alias syncmusic='$SCRIPTDIR/syncmusic.sh'
 
 # chezmoi commands
 alias edit='chezmoi edit --apply'
-alias cmpush='sh $SCRIPTDIR/chezmoipush.sh'
 alias cmpull='chezmoi update --apply'
 alias host='cat /etc/hostname'
-alias cmpush='sh $SCRIPTDIR/chezmoipush.sh'
 alias edit='chezmoi edit --apply'
 alias cmpull='chezmoi update --apply'
 alias cmlist='chezmoi list --tree'
