@@ -17,24 +17,27 @@ currentcol="${currentws#*:}"
 savedir="/tmp/sway/swayrows"
 mkdir -p $savedir
 
-plusminus() {
+operate() {
     # usage: plusminus <input 1> <operator> <input 2>
-    if [[ $2 = "+" ]]; then
-        output="$(($1 + $3))"
-    elif [[ $2 = "-" ]]; then
-    output="$(($1 - $3))"
-        if [[ $output -le 0 ]]; then
-            echo 0
-            return 0
-        fi       
+    # operators:
+    # "+": adds amount and echoes value
+    # "-": subtracts amount and echoes value
+    # "set": returns amount
+    # this function will not 
+    if [[ $2 = "set" ]]; then
+        output=$3
+    else
+        output=$(( $1 $2 $3 ))
     fi
-
+    if [[ $output -le 0 ]]; then
+        output=0
+    fi
     echo $output
 }
 
 if [[ "$rc" == "row" ]]; then
     # set the new row
-    newrow=$(plusminus $currentrow $operator $amount)
+    newrow=$(operate $currentrow $operator $amount)
     # set the new col (load from save if exists)
     if [[ -f "$savedir/$newrow" ]]; then
         newcol=$(cat "$savedir/$newrow")
@@ -53,7 +56,7 @@ if [[ "$rc" == "row" ]]; then
     # done
 elif [[ "$rc" == "col" ]]; then
     # set the new col
-    newcol="$(plusminus $currentcol $operator $amount)"
+    newcol="$(operate $currentcol $operator $amount)"
     # change to new workspace
     swaymsg workspace "$currentrow:$newcol"
     echo "$newrow:$newcol"
