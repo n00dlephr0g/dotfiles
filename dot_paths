@@ -2,3 +2,6 @@ export CONFDIR="$HOME/.config"
 export HYPRDIR="$CONFDIR/hyrp/hyprland"
 export SCRIPTDIR="$CONFDIR/scripts"
 export PACKAGEDIR="$CONFDIR/packages"
+export CACHEDIR="$CONFDIR/cache"
+
+export PATH="$PATH:$SCRIPTDIR"
