@@ -4,8 +4,7 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $runkey r
-set $browserkey
+set $runkey d
 
 # programs
 set $term foot
@@ -14,7 +13,7 @@ set $browser zen-browser
 #keybinds
 bindsym $mod+t exec $term
 bindsym $mod+q kill
-bindsym $mod+r exec fuzzel
+bindsym $mod+$runkey exec fuzzel
 bindsym $mod+b exec $browser --enable-features=UseOzonePlatform --ozone-platform=wayland
 bindsym $mod+Shift+s exec grim -g "$(slurp -d)" - | wl-copy
 
