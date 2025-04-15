@@ -57,10 +57,11 @@ bindsym $mod+Left exec swaymsg exec swayrow.sh col - 1
 bindsym $mod+Right exec swaymsg exec swayrow.sh col + 1
 bindsym $mod+Up exec swaymsg exec swayrow.sh row - 1
 bindsym $mod+Down exec swaymsg exec swayrow.sh row + 1
-bindgesture swipe:left exec swaymsg exec swayrow col + 1
-bindgesture swipe:right exec swayrow col - 1
-bindgesture swipe:down exec swayrow row - 1
-bindgesture swipe:up exec swayrow row + 1
+
+bindgesture swipe:left exec swaymsg exec swayrow.sh col + 1
+bindgesture swipe:right exec swaymsg exec swayrow.sh col - 1
+bindgesture swipe:down exec swaymsg exec swayrow.sh row - 1
+bindgesture swipe:up exec swaymsg exec swayrow.sh row + 1
 
 bindsym $mod+f fullscreen
 

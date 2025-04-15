@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # this is a shell script that will act as a sway config variable
-# usage: swayrow.sh <> <row or column> <+ or -> <int>
+# usage: swayrow.sh <> <row or column> <+ or - or set> <int>
 # operations: row, column
 # 
 
