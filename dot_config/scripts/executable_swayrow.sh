@@ -1,23 +1,21 @@
 #!/bin/bash
 
 # this is a shell script that will act as a sway config variable
-# usage: swayrow.sh <> <row or column> <+ or - or set> <int>
+# usage: swayrow.sh <row or column> <+ or - or set> <int>
 # operations: row, column
 # 
 
 
 plusminus() {
     # usage: plusminus <input 1> <operator> <input 2>
-    if [[ $2 = "+" ]]; then
-        output="$(($1 + $3))"
-    elif [[ $2 = "-" ]]; then
-    output="$(($1 - $3))"
-        if [[ $output -le 0 ]]; then
-            echo 0
-            return 0
-        fi
+    if [[ $2 = "set" ]]; then
+        output=$3
+    else
+        output="$(( $1 $2 $3 ))"
     fi
-
+    if [[ $output -lt 0 ]]; then
+        output=0
+    fi
     echo $output
 }
 
