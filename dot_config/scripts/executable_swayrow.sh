@@ -1,9 +1,13 @@
 #!/bin/bash
 
 # this is a shell script that will act as a sway config variable
-# usage: swayrow.sh <row or column> <+ or - or set> <int>
+# usage: swayrow.sh <change or move> <row or column> <+ or - or set> <int>
 # operations: row, column
-# 
+
+changemove=$1
+rowcol=$2
+incdecset=$3
+amount=$4
 
 
 plusminus() {
@@ -23,7 +27,7 @@ changelogic() {
     # set argument variables for readability
     rc=$1
     operator=$2
-    amount=$3
+    number=$3
 
     # save current row to script
     oldws=$(swaymsg -t get_workspaces | jq -r '.[] | select(.focused==true).name')
@@ -46,7 +50,7 @@ changelogic() {
         # return new workspace
         echo "$newrow:$newcol"
         # check if the original row still exists after switch and rm if not
-        if [[ -z $(swaymsg -t get_workspaces | jq -r '.[].name' | grep "$oldrow:") ]]; then
+        if ! swaymsg -t get_workspaces | jq -r '.[].name' | grep -q "$oldrow:"; then
             rm "$savedir/$oldrow"
         fi
         # done
@@ -58,6 +62,10 @@ changelogic() {
     fi
 }
 
-swaymsg workspace "$(changelogic $1 $2 $3)"
+newws="$(changelogic $rowcol $incdecset $amount)"
 
-
+if [[ $changemove = "change" ]]; then
+    swaymsg workspace $newws
+elif [[ $changemove = "move" ]]; then
+    swaymsg move container to workspace $newws, workspace $newws
+fi

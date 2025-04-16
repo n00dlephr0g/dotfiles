@@ -14,8 +14,8 @@ url="n00dlephr0g@$($SCRIPTDIR/checknetwork.sh)"
 
 for item in $@
 do
-	actualitem="$url:item"
-	cpv n00dlephr0g@$url:$actualitem ./yanked
+	actualitem="$url:$item"
+	rsync $actualitem ./yanked
 	if [ $? -ne 0 ]; then
 		echo "failed yanking $item"
 	else

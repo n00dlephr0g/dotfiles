@@ -53,15 +53,20 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 bindswitch lid:on output eDP-1 disable
 bindswitch lid:off output eDP-1 enable
 
-bindsym $mod+Left exec swaymsg exec swayrow.sh col - 1
-bindsym $mod+Right exec swaymsg exec swayrow.sh col + 1
-bindsym $mod+Up exec swaymsg exec swayrow.sh row - 1
-bindsym $mod+Down exec swaymsg exec swayrow.sh row + 1
+bindsym $mod+Shift+$left exec swaymsg exec swayrow.sh move col - 1
+bindsym $mod+Shift+$right exec swaymsg exec swayrow.sh move col + 1
+bindsym $mod+Shift+$up exec swaymsg exec swayrow.sh move row - 1
+bindsym $mod+Shift+$down exec swaymsg exec swayrow.sh move row + 1
 
-bindgesture swipe:left exec swaymsg exec swayrow.sh col + 1
-bindgesture swipe:right exec swaymsg exec swayrow.sh col - 1
-bindgesture swipe:down exec swaymsg exec swayrow.sh row - 1
-bindgesture swipe:up exec swaymsg exec swayrow.sh row + 1
+bindsym $mod+$left exec swaymsg exec swayrow.sh change col - 1
+bindsym $mod+$right exec swaymsg exec swayrow.sh change col + 1
+bindsym $mod+$up exec swaymsg exec swayrow.sh change row - 1
+bindsym $mod+$down exec swaymsg exec swayrow.sh change row + 1
+
+bindgesture swipe:left exec swaymsg exec swayrow.sh change col + 1
+bindgesture swipe:right exec swaymsg exec swayrow.sh change col - 1
+bindgesture swipe:down exec swaymsg exec swayrow.sh change row - 1
+bindgesture swipe:up exec swaymsg exec swayrow.sh change row + 1
 
 bindsym $mod+f fullscreen
 
