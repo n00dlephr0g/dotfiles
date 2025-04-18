@@ -15,7 +15,7 @@ url="n00dlephr0g@$($SCRIPTDIR/checknetwork.sh)"
 for item in $@
 do
 	actualitem="$url:$item"
-	rsync $actualitem ./yanked
+	rsync --info=progress2 -h $actualitem ./yanked
 	if [ $? -ne 0 ]; then
 		echo "failed yanking $item"
 	else
