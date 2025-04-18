@@ -90,19 +90,31 @@ P.S. You can delete this when you're done too. It's your config now! :)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- Set to true if you have a Nerd Font installed and selected in the terminal
+-- set to true if you have a nerd font installed and selected in the terminal
 vim.g.have_nerd_font = false
-
--- [[ Setting options ]]
+-- [[ setting options ]]
 require("options")
 
--- [[ Basic Keymaps ]]
+-- [[ basic keymaps ]]
 require("keymaps")
 
--- [[ Install `lazy.nvim` plugin manager ]]
+-- [[ install `lazy.nvim` plugin manager ]]
 require("lazy-bootstrap")
 
--- [[ Configure and install plugins ]]
+-- [[ set theme before anything else]]
+require("lazy").setup({
+    {
+        "olimorris/onedarkpro.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
+        config = function()
+            vim.cmd.colorscheme("onedark")
+        end,
+    },
+})
+
+-- [[ configure and install plugins ]]
 require("lazy-plugins")
 
 -- The line beneath this is called `modeline`. See `:help modeline`
