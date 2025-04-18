@@ -35,9 +35,9 @@ alias cmpull='chezmoi update --apply'
 alias cmlist='chezmoi list --tree'
 
 # yt-dlp shortcuts
-alias dlsong='yt-dlp --config-locations ~/.conf/ytdlp/music/song'
-alias dlalbum='yt-dlp --config-locations ~/.conf/ytdlp/music/album'
-alias dlcd='yt-dlp --config-locations ~/.conf/ytdlp/music/cd'
+alias dlsong='yt-dlp --config-locations $CONFDIR/ytdlp/music/song'
+alias dlalbum='yt-dlp --config-locations $CONFDIR/ytdlp/music/album'
+alias dlcd='yt-dlp --config-locations $CONFDIR/ytdlp/music/cd'
 
 
 # vm commands
