@@ -21,6 +21,7 @@ output * bg ~/.config/images/wallpaper.jpg fill
 
 exec {
     polkit-qt6
+    polkit-kde-agent
     pipewire-pulse
     swaymsg workspace 0:0
 }
