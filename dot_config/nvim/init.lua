@@ -101,19 +101,6 @@ require("keymaps")
 -- [[ install `lazy.nvim` plugin manager ]]
 require("lazy-bootstrap")
 
--- [[ set theme before anything else]]
-require("lazy").setup({
-    {
-        "olimorris/onedarkpro.nvim",
-        lazy = false,
-        priority = 1000,
-        opts = {},
-        config = function()
-            vim.cmd.colorscheme("onedark")
-        end,
-    },
-})
-
 -- [[ configure and install plugins ]]
 require("lazy-plugins")
 

@@ -57,8 +57,8 @@ if [[ "$rc" == "row" ]]; then
 elif [[ "$rc" == "col" ]]; then
     # set the new col
     newcol="$(operate $currentcol $operator $amount)"
+    newrow="$currentrow"
     # change to new workspace
-    swaymsg workspace "$currentrow:$newcol"
-    echo "$newrow:$newcol"
+    swaymsg workspace "$newrow:$newcol"
 fi
 

@@ -10,5 +10,5 @@ else
 fi
 
 
-rsync -avh --size-only --ignore-existing --info=progress2 ~/Music/ "n00dlephr0g@$IPADDR:/data/music"
+rsync -avh --size-only --ignore-existing --info=progress2 ~/Music/ "n00dlephr0g@$IPADDR:/data/downloads/music"
 

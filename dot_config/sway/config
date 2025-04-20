@@ -44,8 +44,13 @@ default_border pixel 2
 bindsym Ctrl+Shift+escape exec $term -e btop
 floating_modifier $mod normal
 bindsym $mod+Shift+c reload
-bindsym XF86AudioRaiseVolume exec pw-volume change +5%
-bindsym XF86AudioLowerVolume exec pw-volume change -5%
+bindsym XF86AudioRaiseVolume exec pulsemixer change-volume +5
+bindsym XF86AudioLowerVolume exec pulsemixer change-volume -5
+bindsym XF86AudioMute exec pw-volume mute toggle
+
+
+bindsym XF86AudioRaiseVolume exec pulsemixer change-volume +5
+bindsym XF86AudioLowerVolume exec pulsemixer change-volume -5
 bindsym XF86AudioMute exec pw-volume mute toggle
 
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
