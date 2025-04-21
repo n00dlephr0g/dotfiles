@@ -1,0 +1,12 @@
+--progress
+--break-on-existing
+-N 4
+-R 20
+-x
+-S acodec:m4a
+--audio-quality 0
+--audio-format m4a
+--embed-thumbnail
+--embed-metadata
+-o ~/Music/Albums/%(album)s/%(playlist_index)s-%(title)s.%(ext)s
+

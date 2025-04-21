@@ -1,0 +1,8 @@
+# name videos
+-q
+--progress
+--break-on-existing
+-R 20
+-r 5M
+-o ~/yt/p/%(playlist)s/%(playlist_index)s-%(title)s.%(ext)s
+
