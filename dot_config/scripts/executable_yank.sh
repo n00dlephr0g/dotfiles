@@ -6,16 +6,16 @@ if [ $# -lt 1 ]; then
 	exit 1
 fi
 
-mkdir yanked -p
+mkdir ~/Downlaods -p
 
-echo "yanking items to ./yanked"
+echo "yanking items to ~/Downloads/"
 
 url="n00dlephr0g@$($SCRIPTDIR/checknetwork.sh)"
 
 for item in $@
 do
 	actualitem="$url:$item"
-	rsync --info=progress2 -h $actualitem ./yanked
+	rsync --info=progress2 -h $actualitem ~/Downloads/
 	if [ $? -ne 0 ]; then
 		echo "failed yanking $item"
 	else
