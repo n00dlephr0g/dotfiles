@@ -1,5 +1,5 @@
 # source paths
-source "$HOME/.conf/paths"
+source "$CONFDIR/paths"
 
 # Created by `pipx` on 2024-08-28 02:57:56
 export PATH="$PATH:/home/n00dlephr0g/.local/bin"

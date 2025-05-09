@@ -162,6 +162,10 @@ return {
                             end,
                         })
                     end
+                    vim.opt_local.tabstop = 4
+                    vim.opt_local.softtabstop = 4
+                    vim.opt_local.shiftwidth = 4
+                    vim.opt_local.expandtab = true
 
                     -- The following code creates a keymap to toggle inlay hints in your
                     -- code, if the language server you are using supports them
