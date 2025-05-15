@@ -36,7 +36,7 @@ alias cmlist='chezmoi list --tree'
 
 # yt-dlp shortcuts
 alias dlsong='yt-dlp --config-locations $CONFDIR/ytdlp/music/song'
-alias dlalbum='yt-dlp --config-locations $CONFDIR/ytdlp/music/album'
+alias dlalbum='yt-dlp --config-locations $CONFDIR/ytdlp/music/album --cookies-from-browser firefox'
 alias dlcd='yt-dlp --config-locations $CONFDIR/ytdlp/music/cd'
 
 

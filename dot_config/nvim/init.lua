@@ -98,6 +98,9 @@ require("options")
 -- [[ basic keymaps ]]
 require("keymaps")
 
+-- [[ commands ]]
+require("commands")
+
 -- [[ install `lazy.nvim` plugin manager ]]
 require("lazy-bootstrap")
 
