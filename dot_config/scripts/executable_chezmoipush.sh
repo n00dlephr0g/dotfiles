@@ -2,7 +2,7 @@
 
 chmod +x $SCRIPTDIR/*
 
-cp ~/.config/chezmoi/chezmoi.toml ~/.config/copies/chezmoi.toml.copy
+cp ~/.config/chezmoi/chezmoi.toml ~/.config/copies/chezmoi.toml
 
 cd ~/.local/share/chezmoi
 
