@@ -1,0 +1,8 @@
+encryption = "gpg"
+
+[gpg]
+	recipients = [
+		"monkeyjosephlee@gmail.com"
+	]
+
+
