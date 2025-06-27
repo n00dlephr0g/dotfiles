@@ -2,6 +2,8 @@
 
 chmod +x $SCRIPTDIR/*
 
+cp ~/.config/chezmoi/chezmoi.toml ~/.config/copies/chezmoi.toml.copy
+
 cd ~/.local/share/chezmoi
 
 chezmoi re-add
