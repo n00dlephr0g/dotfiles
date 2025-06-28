@@ -30,8 +30,6 @@ alias eduroam='nmcli device wifi rescan; nmcli device wifi connect eduroam'
 alias edit='chezmoi edit --apply'
 alias cmpull='chezmoi update --apply'
 alias host='cat /etc/hostname'
-alias edit='chezmoi edit --apply'
-alias cmpull='chezmoi update --apply'
 alias cmlist='chezmoi list --tree'
 
 # yt-dlp shortcuts
