@@ -29,7 +29,6 @@ alias eduroam='nmcli device wifi rescan; nmcli device wifi connect eduroam'
 # chezmoi commands
 alias edit='chezmoi edit --apply'
 alias cmpull='chezmoi update --apply'
-alias host='cat /etc/hostname'
 alias cmlist='chezmoi list --tree'
 
 # yt-dlp shortcuts
@@ -37,6 +36,3 @@ alias dlsong='yt-dlp --config-locations $CONFDIR/ytdlp/music/song'
 alias dlalbum='yt-dlp --config-locations $CONFDIR/ytdlp/music/album --cookies-from-browser firefox'
 alias dlcd='yt-dlp --config-locations $CONFDIR/ytdlp/music/cd'
 
-
-# vm commands
-alias virsh='virsh -c qemu:///system'

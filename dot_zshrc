@@ -7,6 +7,8 @@ fi
 autoload -Uz compinit
 compinit
 
+mkbin
+
 # source stuff with recursion protection
 for file in $CONFDIR/zsh/*(.); 
 do
