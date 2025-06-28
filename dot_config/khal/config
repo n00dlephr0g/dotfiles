@@ -1,8 +1,25 @@
 [calendars]
 
-[[monkeyjosephlee_local]]
-path = ~/.local/calendars/*
-type = discover
+[[personal]]
+path = ~/.calendars/personal/
+type = calendar
+color = white
+
+[[assignments]]
+path = ~/.calendars/assignments/
+type = calendar
+readonly = True
+color = light magenta
+
+[[classes]]
+path = ~/.calendars/classes/
+type = calendar
+readonly = True
+
+[[exams]]
+path = ~/.calendars/exams/
+type = calendar
+readonly = True
 
 [locale]
 timeformat = %H:%M
@@ -12,4 +29,5 @@ datetimeformat = %Y-%m-%d %H:%M
 longdatetimeformat = %Y-%m-%d %H:%M
 
 [default]
-default_calendar = monkeyjosephlee@gmail.com
+default_calendar = personal
+
