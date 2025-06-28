@@ -1,0 +1,33 @@
+# global
+FSync yes
+
+# personal email
+IMAPAccount monkeyjosephlee
+Host imap.gmail.com
+Port 993
+User monkeyjosephlee@gmail.com
+PassCmd "oauth2-gmail"
+AuthMechs XOAUTH2
+TLSType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+# remote store
+IMAPStore monkeyjosephlee_remote
+Account monkeyjosephlee
+
+# local store
+MaildirStore monkeyjosephlee_local
+Path ~/Mail/monkeyjosephlee
+Inbox ~/Mail/monkeyjosephlee/INBOX
+
+# channel
+Channel monkeyjosephlee_channel
+Far :monkeyjosephlee_remote:
+Near :monkeyjosephlee_local:
+Create Near
+Sync Pull
+SyncState *
+
+# group
+Group monkeyjosephlee
+Channel monkeyjosephlee_channel
