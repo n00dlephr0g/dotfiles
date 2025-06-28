@@ -2,7 +2,6 @@
 
 SSID=$(iwgetid -r)
 
-IPADDR="scallop"
 
 if [ "$#" -ne 2 ]; then
 	echo "Error: expecting 2 arguments"
@@ -10,13 +9,7 @@ if [ "$#" -ne 2 ]; then
 	exit 1
 fi
 
-if [ "$SSID" = "TimTen" ]; then
-	echo "home network detected, syncing on local"
-	IPADDR="192.168.0.74"
-else
-	echo "no home network detected, syncing to remote"
-fi
-
+IPADDR=$(checknetwork)
 
 rsync -avh --info=progress2 $1 "n00dlephr0g@$IPADDR:$2"
 

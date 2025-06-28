@@ -8,6 +8,7 @@ chezmoi re-add
 
 chezmoi add -r "$SCRIPTDIR/"
 chezmoi add -r "$PACKAGEDIR/"
+chezmoi add -r "$BINDIR/"
 
 git add .
 

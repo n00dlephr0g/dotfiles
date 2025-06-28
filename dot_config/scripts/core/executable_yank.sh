@@ -10,7 +10,7 @@ mkdir ~/Downlaods -p
 
 echo "yanking items to ~/Downloads/"
 
-url="n00dlephr0g@$($SCRIPTDIR/checknetwork.sh)"
+url="n00dlephr0g@$(checknetwork)"
 
 for item in $@
 do

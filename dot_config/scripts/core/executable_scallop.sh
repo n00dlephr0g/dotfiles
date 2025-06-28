@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ssh $($SCRIPTDIR/checknetwork.sh)
+ssh $(checknetwork)
