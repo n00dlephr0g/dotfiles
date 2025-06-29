@@ -1,7 +1,7 @@
 [calendars]
 
 [[personal]]
-path = ~/.calendars/personal/
+path = ~/.calendars/personal/monkeyjosephlee@gmail.com/
 type = calendar
 color = white
 
@@ -25,8 +25,8 @@ readonly = True
 timeformat = %H:%M
 dateformat = %Y-%m-%d
 longdateformat = %Y-%m-%d
-datetimeformat = %Y-%m-%d %H:%M
-longdatetimeformat = %Y-%m-%d %H:%M
+datetimeformat = %Y-%m-%d %H%M
+longdatetimeformat = %Y-%m-%d %H%M
 
 [default]
 default_calendar = personal

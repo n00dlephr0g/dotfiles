@@ -18,7 +18,7 @@ bindsym $mod+$runkey exec fuzzel
 bindsym $mod+b exec $browser
 bindsym $mod+Shift+s exec grim -g "$(slurp -d)" - | wl-copy
 
-output * bg ~/.config/images/wallpaper.jpg fill
+output * bg ~/.config/wallpapers/wallpaper.jpg fill
 
 exec {
     polkit-qt6
