@@ -10,6 +10,7 @@ chezmoi add -r "$SCRIPTDIR/"
 chezmoi add -r "$PACKAGEDIR/"
 chezmoi add -r "$BINDIR/"
 chezmoi add -r "~/.config/nvim/lua/"
+chezmoi add -r "~/.config/nvim/colors"
 
 git add .
 
