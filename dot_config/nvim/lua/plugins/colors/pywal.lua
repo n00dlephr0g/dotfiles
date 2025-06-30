@@ -10,6 +10,27 @@ local pywal_json_file = vim.fn.expand("~/.cache/wal/colors.json")
 -- Placeholder for Pywal data and the final palette
 local pywal_data = {}
 local pywal_derived_palette = {} -- This will be our main palette for onedarkpro.nvim
+local fallback = {
+    special = { background = "#282c34", foreground = "#abb2bf" },
+    colors = {
+        color0 = "#282c34",
+        color1 = "#e06c75",
+        color2 = "#98c379",
+        color3 = "#e5c07b",
+        color4 = "#61afef",
+        color5 = "#c678dd",
+        color6 = "#56b6c2",
+        color7 = "#abb2bf",
+        color8 = "#5c6370",
+        color9 = "#e06c75",
+        color10 = "#98c379",
+        color11 = "#e5c07b",
+        color12 = "#61afef",
+        color13 = "#c678dd",
+        color14 = "#56b6c2",
+        color15 = "#abb2bf",
+    },
+}
 
 -- Attempt to load and parse colors.json
 if vim.fn.filereadable(pywal_json_file) then
@@ -19,32 +40,12 @@ if vim.fn.filereadable(pywal_json_file) then
     local ok, parsed_data = pcall(vim.json.decode, json_string)
     if ok and type(parsed_data) == "table" and parsed_data.colors and parsed_data.special then
         pywal_data = parsed_data
-        -- vim.notify("Pywal colors.json loaded successfully.", vim.log.levels.INFO) -- Don't notify from theme file
+        --vim.notify("Pywal colors.json loaded successfully.", vim.log.levels.INFO) -- Don't notify from theme file
     else
         -- Log the actual parsing error for debugging (will appear in :messages)
         vim.api.nvim_err_writeln("OneDarkPro Pywal Theme Error: Failed to parse colors.json: " .. tostring(parsed_data))
         -- Fallback to a default dark palette if JSON parsing fails
-        pywal_data = {
-            special = { background = "#282c34", foreground = "#abb2bf" },
-            colors = {
-                color0 = "#282c34",
-                color1 = "#e06c75",
-                color2 = "#98c379",
-                color3 = "#e5c07b",
-                color4 = "#61afef",
-                color5 = "#c678dd",
-                color6 = "#56b6c2",
-                color7 = "#abb2bf",
-                color8 = "#5c6370",
-                color9 = "#e06c75",
-                color10 = "#98c379",
-                color11 = "#e5c07b",
-                color12 = "#61afef",
-                color13 = "#c678dd",
-                color14 = "#56b6c2",
-                color15 = "#abb2bf",
-            },
-        }
+        pywal_data = fallback
     end
 else
     vim.api.nvim_err_writeln(
@@ -53,27 +54,7 @@ else
             .. ". Using fallback default theme."
     )
     -- Fallback to a default dark palette if file not found
-    pywal_data = {
-        special = { background = "#282c34", foreground = "#abb2bf" },
-        colors = {
-            color0 = "#282c34",
-            color1 = "#e06c75",
-            color2 = "#98c379",
-            color3 = "#e5c07b",
-            color4 = "#61afef",
-            color5 = "#c678dd",
-            color6 = "#56b6c2",
-            color7 = "#abb2bf",
-            color8 = "#5c6370",
-            color9 = "#e06c75",
-            color10 = "#98c379",
-            color11 = "#e5c07b",
-            color12 = "#61afef",
-            color13 = "#c678dd",
-            color14 = "#56b6c2",
-            color15 = "#abb2bf",
-        },
-    }
+    pywal_data = fallback
 end
 
 -- Determine background meta based on Pywal's background color
@@ -163,7 +144,6 @@ local function generate(colors)
         virtual_text_hint = color.lighten(colors.cyan, 10.8),
     }
 end
-
 -- --- THIS IS THE CRUCIAL RETURN TABLE ---
 -- This is what onedarkpro.nvim expects your custom theme file to return.
 return {

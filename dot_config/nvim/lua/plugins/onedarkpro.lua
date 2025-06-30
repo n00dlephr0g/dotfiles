@@ -12,6 +12,8 @@ return {
                 constants = "bold",
             },
         })
+        vim.cmd("OneDarkProClean")
+        vim.cmd("OneDarkProCache")
         vim.cmd([[colorscheme pywal]])
     end,
 }
