@@ -9,6 +9,7 @@ chezmoi re-add
 chezmoi add -r "$SCRIPTDIR/"
 chezmoi add -r "$PACKAGEDIR/"
 chezmoi add -r "$BINDIR/"
+chezmoi add -r "~/.config/nvim/lua/"
 
 git add .
 
