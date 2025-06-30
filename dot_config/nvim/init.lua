@@ -6,6 +6,7 @@ vim.g.maplocalleader = " "
 -- set to true if you have a nerd font installed and selected in the terminal
 vim.g.have_nerd_font = false
 -- [[ setting options ]]
+
 require("options")
 
 -- [[ basic keymaps ]]
