@@ -1,7 +1,8 @@
-# advanced ls commands
+# directory shinanigans
 alias l='ls --group-directories-first'
 alias ll='ls -AFho --group-directories-first'
 alias la='ls -A --group-directories-first'
+alias b='cd ..'
 
 
 # program shortcuts

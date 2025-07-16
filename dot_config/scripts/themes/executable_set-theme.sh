@@ -5,4 +5,7 @@ if [ $# != 1 ]; then
 fi
 
 wallpaper=$1
-wal -i
+
+wal -i $1
+swww img $1
+

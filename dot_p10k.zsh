@@ -84,12 +84,12 @@
   typeset -g POWERLEVEL9K_VIRTUALENV_{LEFT,RIGHT}_DELIMITER=
 
   # Blue current directory.
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND=$magenta
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND=$brightred
 
   # Context format when root: user@host. The first part white, the rest grey.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE="%F{$white}%n%f%F{$grey}@%m%f"
   # Context format when not root: user@host. The whole thing grey.
-  typeset -g POWERLEVEL9K_CONTEXT_TEMPLATE="%F{$green}%n%f%F{$grey}@%m%f"
+  typeset -g POWERLEVEL9K_CONTEXT_TEMPLATE="%F{$green}%n%f%F{$white}@%f%F{$cyan}%m%f"
   # Don't show context unless root or in SSH.
 
   # Show previous command duration only if it's >= 5s.
@@ -137,7 +137,7 @@
   typeset -g POWERLEVEL9K_VCS_CONTENT_EXPANSION='${${${P9K_CONTENT/⇣* :⇡/⇣⇡}// }//:/ }'
 
   # Grey current time.
-  typeset -g POWERLEVEL9K_TIME_FOREGROUND=$blue
+  typeset -g POWERLEVEL9K_TIME_FOREGROUND=$magenta
   # Format for the current time: 09:51:02. See `man 3 strftime`.
   typeset -g POWERLEVEL9K_TIME_FORMAT='[%D{%H:%M:%S}]'
   # If set to true, time will update when you hit enter. This way prompts for the past
