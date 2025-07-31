@@ -10,7 +10,7 @@ Host github.com
 #jlee0365@git.infotech.monash.edu
 Host git.infotech.monash.edu
     HostName git.infotech.monash.edu
-    IdentityFile ~/.ssh/rsa_jlee0365
+    IdentityFile ~/.ssh/gitlab
     User git
     #IdentitiesOnly yes
 

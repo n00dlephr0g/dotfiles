@@ -1,13 +1,6 @@
--- [[ Setting options ]]
--- See `:help vim.opt`
--- NOTE: You can change these options as you wish!
---  For more options, you can see `:help option-list`
-
--- Make line numbers default
+-- hybrid line numbers
+vim.opt.relativenumber = true
 vim.opt.number = true
--- You can also add relative line numbers, to help with jumping.
---  Experiment for yourself to see if you like it!
--- vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = "a"
@@ -66,4 +59,5 @@ vim.opt.scrolloff = 3
 
 vim.opt.mousescroll = "ver:1,hor:3"
 
--- vim: ts=2 sts=2 sw=2 et
+-- set conceal level to 1 (conceal unless on hover)
+vim.opt.conceallevel = 1
