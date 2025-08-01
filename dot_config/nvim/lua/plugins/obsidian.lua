@@ -22,10 +22,16 @@ return {
             {
                 name = "personal",
                 path = "~/personal",
+                overrides = {
+                    notes_subdir = "misc",
+                },
             },
             {
                 name = "school",
                 path = "~/school",
+                overrides = {
+                    notes_subdir = "cards",
+                },
             },
         },
 
