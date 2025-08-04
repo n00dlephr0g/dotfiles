@@ -1,5 +1,5 @@
 return {
-    "epwalsh/obsidian.nvim",
+    "obsidian-nvim/obsidian.nvim",
     version = "*", -- recommended, use latest release instead of latest commit
     lazy = true,
     ft = "markdown",
@@ -34,7 +34,29 @@ return {
                 },
             },
         },
+        new_notes_location = "notes_subdir",
+        attachments = {
+            img_folder = "images",
+        },
 
-        -- see below for full list of options 👇
+        -- Optional, customize how note IDs are generated given an optional title.
+        ---@param title string|?
+        ---@return string
+        note_id_func = function(title)
+            local base_id = ""
+            if title ~= nil then
+                -- Sanitize the title to create a valid filename part.
+                base_id = title:gsub(" ", "-"):gsub("[^A-Za-z0-9-]", ""):lower()
+            else
+                -- If no title is given, fall back to a generic name like 'new-note'
+                base_id = "new-note"
+            end
+
+            -- Generate a human-readable timestamp with Year-Month-Day-Hour
+            local human_timestamp = os.date("%Y-%m-%d-%H")
+
+            -- Combine the sanitized title and the timestamp.
+            return base_id .. "-" .. human_timestamp
+        end,
     },
 }
