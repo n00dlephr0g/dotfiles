@@ -1,5 +1,6 @@
--- [[ Basic Keymaps ]]
---  See `:help vim.keymap.set()`
+-- Navigation
+vim.keymap.set("n", "j", "gj", { noremap = true })
+vim.keymap.set("n", "k", "gk", { noremap = true })
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
