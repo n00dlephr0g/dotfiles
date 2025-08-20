@@ -11,7 +11,8 @@ Host github.com
 Host git.infotech.monash.edu
     HostName git.infotech.monash.edu
     IdentityFile ~/.ssh/gitlab
-    User git
+    User jlee0365
+
     #IdentitiesOnly yes
 
 Host scallop
