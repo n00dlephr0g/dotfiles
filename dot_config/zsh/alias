@@ -6,7 +6,7 @@ alias b='cd ..'
 
 
 # program shortcuts
-alias nf='neofetch'
+alias ff='fastfetch'
 alias ed='cd ..'
 alias oct='octave-cli'
 alias f='fzf'

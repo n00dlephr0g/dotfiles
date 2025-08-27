@@ -4,9 +4,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 -- set to true if you have a nerd font installed and selected in the terminal
-vim.g.have_nerd_font = false
--- [[ setting options ]]
+vim.g.have_nerd_font = true
 
+-- [[ setting options ]]
 require("options")
 
 -- [[ basic keymaps ]]
