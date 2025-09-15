@@ -28,6 +28,10 @@ return {
                 },
             },
             {
+                name = "repos",
+                path = "~/repos",
+            },
+            {
                 name = "school",
                 path = "~/school",
                 overrides = {
