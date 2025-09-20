@@ -15,3 +15,7 @@ do
   fi
 done
 unset file
+
+if [ $TERM == linux ]; then
+  /bin/setfont -d
+fi
