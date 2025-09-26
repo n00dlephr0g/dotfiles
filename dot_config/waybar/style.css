@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, IosevkaNerdFont;
+    font-family: FontAwesome, IosevkaTermSlab Nerd Font Mono;
     font-size: 14px;
 }
 
@@ -23,16 +23,16 @@ window#waybar.empty {
 window#waybar.solo {
     background-color: #FFFFFF;
 }
-*/
-
 window#waybar.kitty {
     background-color: #3F3F3F;
 }
-
 window#waybar.chromium {
     background-color: #000000;
     border: none;
 }
+*/
+
+
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
