@@ -10,4 +10,4 @@ git add --all
 
 git commit -m "$message"
 
-
+exit 0

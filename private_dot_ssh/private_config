@@ -28,4 +28,4 @@ Host 192.168.0.74
 Host raphael
     Hostname raphael
     IdentityFile ~/.ssh/raphael
-    User n00dlephr0g
+    User admin
