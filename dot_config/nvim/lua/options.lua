@@ -19,7 +19,15 @@ end)
 -- Enable break indent
 vim.opt.breakindent = true
 vim.opt.linebreak = true
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+
+-- Folds
 vim.opt.foldmethod = "indent"
+
+-- Folds
+vim.opt.foldenable = false
 
 -- Save undo history
 vim.opt.undofile = true
