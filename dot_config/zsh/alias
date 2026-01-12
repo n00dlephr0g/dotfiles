@@ -6,12 +6,14 @@ alias b='cd ..'
 
 
 # program shortcuts
-alias ff='fastfetch'
 alias ed='cd ..'
 alias oct='octave-cli'
-alias f='fzf'
 alias python='python3'
 alias cm='chezmoi'
+alias f='fzf'
+alias fd='cd $(find . -type d | fzf)'
+alias fad='cd $(find / -type d | fzf)'
+alias ff='nvim $(fzf)'
 
 
 # functional shortcuts
