@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ssh $(checknetwork)
+ssh root@scallop
