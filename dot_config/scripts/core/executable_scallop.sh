@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ssh root@scallop
+ssh scallop
