@@ -4,6 +4,7 @@ FreeFloating=true
 [Plugins]
 baloosearchEnabled=true
 browserhistoryEnabled=false
+browsertabsEnabled=false
 helprunnerEnabled=false
 krunner_appstreamEnabled=false
 krunner_bookmarksrunnerEnabled=false
@@ -18,4 +19,4 @@ krunner_webshortcutsEnabled=false
 org.kde.activities2Enabled=false
 
 [Plugins][Favorites]
-plugins=krunner_powerdevil,windows,krunner_services,browsertabs,calculator,unitconverter,krunner_charrunner
+plugins=krunner_powerdevil,windows,krunner_services,krunner_shell,locations,calculator
