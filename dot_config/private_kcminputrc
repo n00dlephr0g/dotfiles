@@ -1,0 +1,8 @@
+[Keyboard]
+RepeatDelay=300
+RepeatRate=50
+
+[Libinput][4817][4305][HUAWEI HUAWEI Mouse CD26 SE]
+PointerAcceleration=-0.400
+PointerAccelerationProfile=1
+ScrollFactor=0.75

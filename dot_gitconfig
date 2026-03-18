@@ -15,5 +15,5 @@
 	process = git-lfs filter-process
 	required = true
 
-[includeIf "hasconfig:remote.*.url:*git.infotech.monash.edu*/**"]
+[includeIf "gitdir:~/school/"]
 	path = ~/.gitconfig-school
