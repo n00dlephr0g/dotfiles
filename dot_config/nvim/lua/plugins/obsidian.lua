@@ -41,7 +41,7 @@ return {
         },
         new_notes_location = "notes_subdir",
         attachments = {
-            img_folder = "images",
+            folder = "images",
         },
 
         -- Optional, customize how note IDs are generated given an optional title.

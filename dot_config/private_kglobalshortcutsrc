@@ -287,7 +287,9 @@ _launch=Meta+.
 
 [services][org.kde.spectacle.desktop]
 ActiveWindowScreenShot=none
+CurrentMonitorScreenShot=
 FullScreenScreenShot=Print
+OpenWithoutScreenshot=
 RecordRegion=Meta+Shift+R
 RecordScreen=none
 RecordWindow=none
