@@ -264,6 +264,16 @@ switch to next activity=,,Switch to Next Activity
 switch to previous activity=,,Switch to Previous Activity
 toggle do not disturb=,,Toggle do not disturb
 
+[services][org.kde.konsole.desktop]
+_launch=none
+
+[services][org.kde.krunner.desktop]
+RunClipboard=none
+_launch=Alt+Space
+
+[services][org.kde.plasma.emojier.desktop]
+_launch=Meta+.
+
 [services][org.kde.spectacle.desktop]
 CurrentMonitorScreenShot=
 OpenWithoutScreenshot=
