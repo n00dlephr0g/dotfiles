@@ -58,5 +58,7 @@ EnablePrimarySelection=false
 Scale=1
 
 [org.kde.kdecoration2]
+ButtonsOnLeft=MFS
+ButtonsOnRight=HAIX
 library=org.kde.kwin.aurorae
 theme=kwin4_decoration_qml_plastik

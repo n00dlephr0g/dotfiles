@@ -2,6 +2,11 @@
 RepeatDelay=300
 RepeatRate=50
 
+[Libinput][1267][3163][ELAN Touchpad and Keyboard Touchpad]
+NaturalScroll=true
+PointerAcceleration=0.000
+PointerAccelerationProfile=1
+
 [Libinput][4817][4305][HUAWEI HUAWEI Mouse CD26 SE]
 PointerAcceleration=-0.400
 PointerAccelerationProfile=1
