@@ -6,3 +6,6 @@ RepeatRate=50
 PointerAcceleration=-0.400
 PointerAccelerationProfile=1
 ScrollFactor=0.75
+
+[Mouse]
+cursorTheme=Oxygen_Zion
