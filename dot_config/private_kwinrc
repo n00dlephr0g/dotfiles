@@ -27,6 +27,10 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][48dcf466-bf37-48c5-9869-6064bb564cce][4e566ea6-2bde-445e-bb4d-8c89ec98cfb0]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][48dcf466-bf37-48c5-9869-6064bb564cce][fbc96f50-797f-4815-9344-ec0a34ecff67]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
@@ -35,7 +39,15 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][b152c738-e3a0-4996-a705-25b153ce7de6][4e566ea6-2bde-445e-bb4d-8c89ec98cfb0]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][b4f22497-a73f-444d-8091-da5d6bdc16ea][41fcde89-1faa-4133-bfc1-c6bc723aa575]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][b4f22497-a73f-444d-8091-da5d6bdc16ea][4e566ea6-2bde-445e-bb4d-8c89ec98cfb0]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -44,6 +56,10 @@ padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][fcad32d8-a03a-441d-89c0-7907e298ddeb][41fcde89-1faa-4133-bfc1-c6bc723aa575]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][fcad32d8-a03a-441d-89c0-7907e298ddeb][4e566ea6-2bde-445e-bb4d-8c89ec98cfb0]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -59,6 +75,5 @@ Scale=1
 
 [org.kde.kdecoration2]
 ButtonsOnLeft=MFS
-ButtonsOnRight=HAIX
 library=org.kde.kwin.aurorae
 theme=kwin4_decoration_qml_plastik

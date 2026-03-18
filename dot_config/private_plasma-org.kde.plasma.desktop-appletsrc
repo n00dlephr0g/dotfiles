@@ -4,28 +4,6 @@ RightButton;NoModifier=org.kde.contextmenu
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][1]
-ItemGeometries-1680x1050=
-ItemGeometries-2560x1080=
-ItemGeometriesHorizontal=
-activityId=bcfe5d08-1d15-4172-9c5f-771f52129758
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][1][General]
-changedPositions={"desktop:/Marvel Rivals.desktop":["2560x1080","0","1"],"desktop:/steam.desktop":["2560x1080","0","0"]}
-lastResolution=2560x1080
-positions={"2560x1080":["1","23","desktop:/steam.desktop","0","0","desktop:/Marvel Rivals.desktop","0","1"]}
-sortMode=-1
-
-[Containments][1][Wallpaper][org.kde.image][General]
-Image=file:///home/n00dlephr0g/.config/themes/wallpapers/wallpaper.jpg
-SlidePaths=/usr/share/wallpapers/
-
 [Containments][2]
 activityId=
 formfactor=2
@@ -144,7 +122,7 @@ plugin=org.kde.plasma.battery
 
 [Containments][2][Applets][7][Applets][24]
 immutability=1
-plugin=org.kde.plasma.brightness
+plugin=org.kde.plasma.bluetooth
 
 [Containments][2][Applets][7][Applets][25]
 immutability=1
@@ -164,6 +142,17 @@ knownItems=org.kde.plasma.vault,org.kde.plasma.bluetooth,org.kde.plasma.camerain
 
 [Containments][2][General]
 AppletOrder=3;4;5;6;7;21;22
+
+[Containments][23]
+ItemGeometries-1536x1024=
+ItemGeometriesHorizontal=
+activityId=b004b064-6fc9-4cfd-adc5-f88be59acf3f
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
 
 [ScreenMapping]
 itemsOnDisabledScreens=

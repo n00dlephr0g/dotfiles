@@ -1,5 +1,6 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
+switch-to-activity-b004b064-6fc9-4cfd-adc5-f88be59acf3f=none,none,Switch to activity "Default"
 switch-to-activity-bcfe5d08-1d15-4172-9c5f-771f52129758=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
@@ -276,7 +277,7 @@ _launch=none
 
 [services][org.kde.krunner.desktop]
 RunClipboard=none
-_launch=Alt+Space\tCtrl+R
+_launch=Meta+R\tAlt+Space
 
 [services][org.kde.plasma-systemmonitor.desktop]
 _launch=Ctrl+Shift+Esc
@@ -286,9 +287,7 @@ _launch=Meta+.
 
 [services][org.kde.spectacle.desktop]
 ActiveWindowScreenShot=none
-CurrentMonitorScreenShot=
 FullScreenScreenShot=Print
-OpenWithoutScreenshot=
 RecordRegion=Meta+Shift+R
 RecordScreen=none
 RecordWindow=none
