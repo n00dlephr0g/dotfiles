@@ -5,9 +5,9 @@ loginMode=emptySession
 count=0
 
 [Session: saved at previous logout]
-clientId1=10db616e73000177237790200000011330002
+clientId1=10796f6761000177390744200000008430000
 count=1
 program1=firefox
-restartCommand1=/usr/lib/firefox/firefox,--sm-client-id,10db616e73000177237790200000011330002
+restartCommand1=/usr/lib/firefox/firefox,--sm-client-id,10796f6761000177390744200000008430000
 restartStyleHint1=0
 userId1=n00dlephr0g
