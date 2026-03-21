@@ -127,6 +127,10 @@ plugin=org.kde.plasma.bluetooth
 
 [Containments][2][Applets][7][Applets][25]
 immutability=1
+plugin=org.kde.plasma.brightness
+
+[Containments][2][Applets][7][Applets][26]
+immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][2][Applets][7][Applets][8]
@@ -146,6 +150,8 @@ AppletOrder=3;4;5;6;7;21;22
 
 [Containments][23]
 ItemGeometries-1536x1024=
+ItemGeometries-1536x864=
+ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
 activityId=b004b064-6fc9-4cfd-adc5-f88be59acf3f
 formfactor=0
@@ -155,6 +161,14 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
+[Containments][23][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][23][Wallpaper][org.kde.image][General]
+Image=file:///home/n00dlephr0g/.config/themes/wallpapers/wallpaper.jpg
+SlidePaths=/usr/share/wallpapers/
+
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/steam.desktop,0,bcfe5d08-1d15-4172-9c5f-771f52129758,desktop:/Marvel Rivals.desktop,0,bcfe5d08-1d15-4172-9c5f-771f52129758
+screenMapping=desktop:/Marvel Rivals.desktop,0,bcfe5d08-1d15-4172-9c5f-771f52129758,desktop:/steam.desktop,0,bcfe5d08-1d15-4172-9c5f-771f52129758

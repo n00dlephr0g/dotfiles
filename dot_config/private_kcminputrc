@@ -7,6 +7,12 @@ NaturalScroll=true
 PointerAcceleration=0.000
 PointerAccelerationProfile=1
 
+[Libinput][1739][52837][DELL0A1F:00 06CB:CE65 Touchpad]
+NaturalScroll=true
+PointerAcceleration=0.200
+PointerAccelerationProfile=1
+ScrollFactor=0.5
+
 [Libinput][4817][4305][HUAWEI HUAWEI Mouse CD26 SE]
 PointerAcceleration=-0.400
 PointerAccelerationProfile=1

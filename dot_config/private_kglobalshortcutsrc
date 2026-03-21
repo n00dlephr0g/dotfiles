@@ -293,7 +293,7 @@ OpenWithoutScreenshot=
 RecordRegion=Meta+Shift+R
 RecordScreen=none
 RecordWindow=none
-RectangularRegionScreenShot=\tMeta+Shift+Print
+RectangularRegionScreenShot=Meta+Shift+S
 WindowUnderCursorScreenShot=none
 _launch=none
 
