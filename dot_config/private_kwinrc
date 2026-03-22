@@ -31,7 +31,11 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+<<<<<<< HEAD
 [Tiling][48dcf466-bf37-48c5-9869-6064bb564cce][d3fcf353-d3ff-4f99-8c1f-1c523d311bd2]
+=======
+[Tiling][48dcf466-bf37-48c5-9869-6064bb564cce][92956368-f1c7-4179-acfb-e4d91ec288cd]
+>>>>>>> 8f537b1 (03/22/26 04:26:33)
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -47,7 +51,11 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+<<<<<<< HEAD
 [Tiling][b152c738-e3a0-4996-a705-25b153ce7de6][d3fcf353-d3ff-4f99-8c1f-1c523d311bd2]
+=======
+[Tiling][b152c738-e3a0-4996-a705-25b153ce7de6][92956368-f1c7-4179-acfb-e4d91ec288cd]
+>>>>>>> 8f537b1 (03/22/26 04:26:33)
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -59,7 +67,11 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+<<<<<<< HEAD
 [Tiling][b4f22497-a73f-444d-8091-da5d6bdc16ea][d3fcf353-d3ff-4f99-8c1f-1c523d311bd2]
+=======
+[Tiling][b4f22497-a73f-444d-8091-da5d6bdc16ea][92956368-f1c7-4179-acfb-e4d91ec288cd]
+>>>>>>> 8f537b1 (03/22/26 04:26:33)
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -75,7 +87,11 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+<<<<<<< HEAD
 [Tiling][fcad32d8-a03a-441d-89c0-7907e298ddeb][d3fcf353-d3ff-4f99-8c1f-1c523d311bd2]
+=======
+[Tiling][fcad32d8-a03a-441d-89c0-7907e298ddeb][92956368-f1c7-4179-acfb-e4d91ec288cd]
+>>>>>>> 8f537b1 (03/22/26 04:26:33)
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -87,7 +103,11 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 EnablePrimarySelection=false
 
 [Xwayland]
+<<<<<<< HEAD
 Scale=1.5
+=======
+Scale=1.25
+>>>>>>> 8f537b1 (03/22/26 04:26:33)
 
 [org.kde.kdecoration2]
 ButtonsOnLeft=MFS
