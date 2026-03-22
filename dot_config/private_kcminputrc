@@ -11,7 +11,7 @@ PointerAccelerationProfile=1
 NaturalScroll=true
 PointerAcceleration=0.200
 PointerAccelerationProfile=1
-ScrollFactor=0.5
+ScrollFactor=0.3
 
 [Libinput][4817][4305][HUAWEI HUAWEI Mouse CD26 SE]
 PointerAcceleration=-0.400

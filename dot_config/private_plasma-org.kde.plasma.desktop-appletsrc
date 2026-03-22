@@ -171,4 +171,4 @@ SlidePaths=/usr/share/wallpapers/
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/Marvel Rivals.desktop,0,bcfe5d08-1d15-4172-9c5f-771f52129758,desktop:/steam.desktop,0,bcfe5d08-1d15-4172-9c5f-771f52129758
+screenMapping=desktop:/steam.desktop,0,bcfe5d08-1d15-4172-9c5f-771f52129758,desktop:/Marvel Rivals.desktop,0,bcfe5d08-1d15-4172-9c5f-771f52129758
